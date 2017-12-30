@@ -43,6 +43,7 @@ def main():
 		testPass(sys.argv[1],sys.argv[2])
 	else:
 		print "Usage : python 2-pwdcrack.py <passwordfile> <dictionaryfile>"
+		print "For sample usage, use cryptpass.txt and dictionary.txt from this folder."
 		exit(0)
 
 if __name__ == '__main__':
