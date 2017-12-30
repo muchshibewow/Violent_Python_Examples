@@ -30,6 +30,7 @@ def testPass(passFile,dictFile):
 		# The hash is "calculated" using the crypt() function,
 		# present in the crypt library. It takes the word and 
 		# the salt as arguments.
+		word = word.strip("\n")
 		if crypt(word,salt) == passwd:
 			print ">> Password found : "+word
 			found = True
