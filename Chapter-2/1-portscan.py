@@ -45,8 +45,8 @@ def main():
 	parser.add_option('-H',dest="host",type="string",help="The target IP address")
 	parser.add_option('-p',dest="ports",type="string",help="The list of target ports on the IP")
 	(options,args) = parser.parse_args()
-	host = args.host
-	ports = list(map(int,str(args.ports).split(",")))
+	host = options.host
+	ports = list(map(int,str(options.ports).split(",")))
 	connScan(host,ports)
 
 if __name__ == '__main__':
