@@ -41,7 +41,7 @@ def connScan(host,ports):
 
 # Typical boilerplate
 def main():
-	parser = optparse.OptionParser("Usage : python 1-portscan.py "+"-H <host IP> "+"-p <target port(s), comma separated>")
+	parser = optparse.OptionParser("python 1-portscan.py "+"-H <host IP> "+"-p <target port(s), comma separated>")
 	parser.add_option('-H',dest="host",type="string",help="The target IP address")
 	parser.add_option('-p',dest="ports",type="string",help="The list of target ports on the IP")
 	(options,args) = parser.parse_args()
